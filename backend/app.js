@@ -7,6 +7,9 @@ const professionalRoutes = require('./routes/professional');
 const port = process.env.PORT || 8080;
 const app = express();
 
+const contactsRoutes = require('./routes/contacts');
+app.use('/contacts', contactsRoutes);
+
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
