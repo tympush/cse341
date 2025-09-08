@@ -1,7 +1,9 @@
-[{
+[
+  {
     "firstName": "Tymur",
     "lastName": "Pushnoy",
     "email": "tymur.pushnoy@gmail.com",
     "favoriteColor": "purple",
     "birthday": "2004-05-03"
-}]
+  }
+]
