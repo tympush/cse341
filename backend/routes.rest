@@ -1,2 +1,37 @@
-GET http://localhost:8080/professional
-# the request above returns a json object with all professional data for Nathan Birch. No database is connected.
+// LOCALHOST
+### Get all contacts
+GET http://localhost:8080/contacts
+
+
+### Get a single contact by ID
+GET http://localhost:8080/contacts/68b5b7cb67003f60aa3d8049
+
+
+### Create a new contact
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "1990-01-01"
+}
+
+
+### Update an existing contact by ID
+PUT http://localhost:8080/contacts/68c2d50c8409bf4a40ca821c HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastName": "Doe",
+    "email": "sarah.doe@gmail.com",
+    "favoriteColor": "brown",
+    "birthday": "1992-02-02"
+}
+
+
+### Delete a contact by ID
+DELETE http://localhost:8080/contacts/68c2d5388409bf4a40ca821d HTTP/1.1

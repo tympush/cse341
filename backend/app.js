@@ -8,7 +8,6 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 const contactsRoutes = require("./routes/contacts");
-app.use("/contacts", contactsRoutes);
 
 app
   .use(bodyParser.json())
@@ -16,7 +15,8 @@ app
     res.setHeader("Access-Control-Allow-Origin", "*");
     next();
   })
-  .use("/professional", professionalRoutes);
+  .use("/professional", professionalRoutes)
+  .use("/contacts", contactsRoutes);
 
 mongodb.initDb((err /*, mongodb*/) => {
   if (err) {
