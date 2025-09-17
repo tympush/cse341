@@ -12,24 +12,24 @@ POST http://localhost:8080/contacts HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.doe@gmail.com",
+    "firstName": "Jeff",
+    "lastName": "Jefferson",
+    "email": "jeff.jefferson@gmail.com",
     "favoriteColor": "blue",
-    "birthday": "1990-01-01"
+    "birthday": "1980-08-01"
 }
 
 
 ### Update an existing contact by ID
-PUT http://localhost:8080/contacts/68c2d50c8409bf4a40ca821c HTTP/1.1
+PUT http://localhost:8080/contacts/68c33abfdbee747214e24ebd HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Sarah",
-    "lastName": "Doe",
-    "email": "sarah.doe@gmail.com",
-    "favoriteColor": "brown",
-    "birthday": "1992-02-02"
+    "firstName": "Jeff",
+    "lastName": "Jefferson",
+    "email": "jeff-jefferson@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "1980-08-02"
 }
 
 
