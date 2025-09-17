@@ -14,4 +14,4 @@ router.put("/:id", validation.saveContact, contactsController.updateContact);
 
 router.delete("/:id", contactsController.deleteContact);
 
-module.exports = router;
+module.exports = router; 
