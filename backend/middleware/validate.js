@@ -9,7 +9,7 @@ const saveContact = (req, res, next) => {
         birthday: 'string'
     };
 
-    validator(req.body, validationRule, {}, (err, status) => {
+    validator(req.body, validationRules, {}, (err, status) => {
         if (!status) {
             res.status(412).json({
                 success: false,
